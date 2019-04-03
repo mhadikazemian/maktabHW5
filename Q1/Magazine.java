@@ -1,4 +1,4 @@
 package com.maktab.HW5.Q1;
 
-public class Magazine {
+public class Magazine extends Readable {
 }
