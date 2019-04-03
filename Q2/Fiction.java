@@ -2,11 +2,13 @@ package com.maktab.HW5.Q2;
 
 public class Fiction extends Book {
 
-    @Override
-    public void setPrice(){
-        this.price = 24.99;
-    }
-    Fiction(){
+    Fiction(String title) {
+        setTitle(title);
         setPrice();
+    }
+
+    @Override
+    public void setPrice() {
+        setPrice(24.99);
     }
 }
