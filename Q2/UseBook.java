@@ -1,4 +1,4 @@
 package com.maktab.HW5.Q2;
 
-public class Q2 {
+public class UseBook {
 }
