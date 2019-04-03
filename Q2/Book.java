@@ -2,7 +2,11 @@ package com.maktab.HW5.Q2;
 
 public abstract class Book {
     private String title;
-    private double price;
+    protected double price;
+
+    Book(){
+
+    }
 
     Book(String title) {
         this.title = title;
