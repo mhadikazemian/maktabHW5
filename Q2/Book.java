@@ -1,8 +1,8 @@
 package com.maktab.HW5.Q2;
 
 public abstract class Book {
-    private String title;
-    protected double price;
+     private String title;
+     private double price;
 
     Book(){
 
@@ -18,6 +18,14 @@ public abstract class Book {
 
     public String getTitle() {
         return title;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public abstract void setPrice();
