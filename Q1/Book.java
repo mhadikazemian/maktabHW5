@@ -1,4 +1,6 @@
 package com.maktab.HW5.Q1;
 
-public class Book {
+public class Book extends Readable {
+    private String author;
+
 }
