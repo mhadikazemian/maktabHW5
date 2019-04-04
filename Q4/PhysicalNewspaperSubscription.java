@@ -7,8 +7,10 @@ public class PhysicalNewspaperSubscription extends NewspaperSubscription {
             System.out.println("Invalid address!");
             this.setRate(0);
         }
-        else
+        else {
             this.setRate(15);
+            this.address = address;
+        }
 
     }
 }
