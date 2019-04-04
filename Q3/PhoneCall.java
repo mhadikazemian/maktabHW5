@@ -1,8 +1,8 @@
 package com.maktab.HW5.Q3;
 
 public abstract class PhoneCall {
-    String phoneNumber;
-    double price;
+    private String phoneNumber;
+    private double price;
     PhoneCall(String phoneNumber){
         this.phoneNumber = phoneNumber;
         this.price = 0.0;
