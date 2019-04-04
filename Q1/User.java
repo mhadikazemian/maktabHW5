@@ -7,7 +7,7 @@ public class User {
     private  int password;
     private String firstName;
     private String lastName;
-    private int cellNumber;
+    private String cellNumber;
     private String Email;
     private Address address;
     Scanner scanner = new Scanner(System.in);
@@ -44,11 +44,11 @@ public class User {
         this.lastName = lastName;
     }
 
-    public int getCellNumber() {
+    public String getCellNumber() {
         return cellNumber;
     }
 
-    public void setCellNumber(int cellNumber) {
+    public void setCellNumber(String cellNumber) {
         this.cellNumber = cellNumber;
     }
 
