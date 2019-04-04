@@ -20,7 +20,7 @@ public class OnlineStore {
         System.out.println("Enter your last name: ");
         user.setLastName(scanner.nextLine());
         System.out.println("Enter your cellphone number: ");
-        user.setCellNumber(scanner.nextInt());
+        user.setCellNumber(scanner.next());
         System.out.println("Enter your Email address: ");
         user.setEmail(scanner.next());
         user.insertAddress();
