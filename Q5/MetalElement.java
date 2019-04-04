@@ -7,6 +7,9 @@ public class MetalElement extends Element {
     @Override
     public void describeElement() {
         System.out.println("************");
+        System.out.println("Element symbol is: " + this.getSymbol());
+        System.out.println("Element atomic number is: " + this.getAtomicNumber());
+        System.out.println("Element atomic weight is: " + this.getAtomicWeight());
         System.out.println("This is a metal element and metals are good conductors of electricity");
         System.out.println("************");
     }
