@@ -1,8 +1,8 @@
 package com.maktab.HW5.Q3;
 
 public class IncommingPhoneCall extends PhoneCall{
-    IncommingPhoneCall(){
-        super(this.phoneNumber);
+    IncommingPhoneCall(String phoneNumber){
+        super(phoneNumber);
         this.price = 0.02;
     }
 
