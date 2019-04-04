@@ -11,6 +11,10 @@ public abstract class Element {
         this.atomicWeight = atomicWeight;
     }
 
+    public Element() {
+
+    }
+
     public String getSymbol() {
         return symbol;
     }
