@@ -22,4 +22,8 @@ public abstract class NewspaperSubscription {
     }
 
     public abstract void setAddress(String address);
+
+    public void setRate(double rate) {
+        this.rate = rate;
+    }
 }
