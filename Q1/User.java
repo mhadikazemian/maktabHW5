@@ -3,15 +3,19 @@ package com.maktab.HW5.Q1;
 import java.util.Scanner;
 
 public class User {
+
+    Scanner scanner = new Scanner(System.in);
+
+    /*User class variables: */
     private String userName;
-    private  int password;
+    private String password;
     private String firstName;
     private String lastName;
     private String cellNumber;
     private String Email;
     private Address address;
-    Scanner scanner = new Scanner(System.in);
 
+    //getters and setters:
     public String getUserName() {
         return userName;
     }
@@ -20,11 +24,11 @@ public class User {
         this.userName = userName;
     }
 
-    public int getPassword() {
+    public String getPassword() {
         return password;
     }
 
-    public void setPassword(int password) {
+    public void setPassword(String password) {
         this.password = password;
     }
 
@@ -64,6 +68,7 @@ public class User {
         return address;
     }
 
+    //method for inserting address by user
     public void insertAddress() {
         Address address = new Address();
         this.address = address;
@@ -74,6 +79,6 @@ public class User {
         System.out.println("Please insert your street: ");
         address.setStreet(scanner.next());
         System.out.println("Please insert your ZIP Code: ");
-        address.setZIPCode(scanner.nextInt());
+        address.setZIPCode(scanner.next());
     }
 }//end of User class
