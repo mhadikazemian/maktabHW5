@@ -76,4 +76,4 @@ public class User {
         System.out.println("Please insert your ZIP Code: ");
         address.setZIPCode(scanner.nextInt());
     }
-}
+}//end of User class
