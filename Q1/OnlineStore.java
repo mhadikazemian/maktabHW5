@@ -3,7 +3,6 @@ package com.maktab.HW5.Q1;
 import java.util.Scanner;
 
 public class OnlineStore {
-    Product product;
     Scanner scanner = new Scanner(System.in);
     private User user;
     private List list;
@@ -24,6 +23,9 @@ public class OnlineStore {
         System.out.println("Enter your Email address: ");
         user.setEmail(scanner.next());
         user.insertAddress();
+    }
+    public void setList(){
 
     }
-}
+
+}//end of OnlineStore class
