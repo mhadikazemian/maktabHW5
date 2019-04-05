@@ -40,5 +40,5 @@ public class Address {
     public void setZIPCode(String ZIPCode) {
         this.ZIPCode = ZIPCode;
     }
-    
+
 }//end of address class
