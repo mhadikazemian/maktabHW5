@@ -31,9 +31,6 @@ public class Q1 {
         //Creating a new cart for the new user:
         Cart cart = new Cart();
 
-        //Listing all the products of online store:
-        List.list(products);
-
         // u variable has been used to iterate do-while loop:
         int u = 0;
 
