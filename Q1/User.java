@@ -15,58 +15,37 @@ public class User {
     private String Email;
     private Address address;
 
-    //getters and setters:
-    public String getUserName() {
-        return userName;
-    }
+    //setters:
 
     public void setUserName(String userName) {
         this.userName = userName;
     }
 
-    public String getPassword() {
-        return password;
-    }
 
     public void setPassword(String password) {
         this.password = password;
     }
 
-    public String getFirstName() {
-        return firstName;
-    }
 
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 
-    public String getLastName() {
-        return lastName;
-    }
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
-    public String getCellNumber() {
-        return cellNumber;
-    }
 
     public void setCellNumber(String cellNumber) {
         this.cellNumber = cellNumber;
     }
 
-    public String getEmail() {
-        return Email;
-    }
 
     public void setEmail(String email) {
         Email = email;
     }
-
-    public Address getAddress() {
-        return address;
-    }
+    
 
     //method for inserting address by user
     public void insertAddress() {
