@@ -15,34 +15,38 @@ public class Cart {
 
     //The following method shows every item that there is in the user's cart:
     public void showCart() {
-        int i = 0;
-        while (i < 5) {
+        Product[] temp = new Product[5];
+        for (int h = 0; h < 5 ; h++) {
+            temp [h] = purchase [h];
+        }
+        int p = 0;
+        while(p < 5) {
             int k = 1;//it counts how many identical products are in a cart
             for (int j = 0; j < 5; j++) {
                 //the if condition is for not to count a counted product again
-                if (i < j) {
-                    if (purchase[i] == (purchase[j])) {
+                if (p < j) {
+                    if (purchase[p].equals(temp[j])) {
+                        temp[j] = null;
                         k++;
                     }
                 }
             }
-            if (purchase[i] != null) {
+            if (purchase[p] != null) {
                 if (k == 1) {
-                    System.out.println((i + 1) + ".");
+                    System.out.println((p + 1) + ".");
                     System.out.print("One product with following specification: ");
-                    purchase[i].description();
-                    i++;
+                    purchase[p].description();
+                    p++;
                 }
                 if (k != 1) {
-                    System.out.println((i + 1) + " till " + (i + k));
+                    System.out.println((p + 1) + " till " + (p + k));
                     System.out.println(k + " products with following specifications: ");
-                    purchase[i].description();
-                    i += k;
+                    purchase[p].description();
+                    p = p + k;
                 }
             }
-            if (purchase[i] == null)
-                i++;
-
+            if (purchase[p] == null)
+                p++;
         }
     }
 
