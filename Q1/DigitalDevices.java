@@ -25,5 +25,5 @@ public abstract class DigitalDevices extends Product {
     public String getModel() {
         return model;
     }
-    
+
 }//end of DigitalDevices class
