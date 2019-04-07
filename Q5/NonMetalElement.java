@@ -1,9 +1,13 @@
 package com.maktab.HW5.Q5;
 
 public class NonMetalElement extends Element {
+
+    //class constructor:
     NonMetalElement(String symbol, int atomicNumber, double atomicWeight){
         super(symbol, atomicNumber, atomicWeight );
     }
+
+    //Overriding abstract method:
     @Override
     public void describeElement() {
         System.out.println("************");
@@ -13,4 +17,5 @@ public class NonMetalElement extends Element {
         System.out.println("This is a nonmetal element and nonmetals are poor conductors");
         System.out.println("************");
     }
-}
+
+}//end of NonMetalElement class
