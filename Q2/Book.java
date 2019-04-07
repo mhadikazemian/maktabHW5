@@ -1,10 +1,13 @@
 package com.maktab.HW5.Q2;
 
 public abstract class Book {
-     private String title;
-     private double price;
 
-    Book(){
+    //Book class variables:
+    private String title;
+    private double price;
+
+    //Book class constructors:
+    Book() {
 
     }
 
@@ -12,16 +15,17 @@ public abstract class Book {
         this.title = title;
     }
 
+    //Book class getters and setters:
     public double getPrice() {
         return price;
     }
 
-    public String getTitle() {
-        return title;
-    }
-
     public void setPrice(double price) {
         this.price = price;
+    }
+
+    public String getTitle() {
+        return title;
     }
 
     public void setTitle(String title) {
@@ -29,4 +33,5 @@ public abstract class Book {
     }
 
     public abstract void setPrice();
-}
+    
+}//end of Book class
