@@ -1,9 +1,13 @@
 package com.maktab.HW5.Q5;
 
 public class MetalElement extends Element {
+
+    //class constructor:
     MetalElement(String symbol, int atomicNumber, double atomicWeight){
         super(symbol,atomicNumber,atomicWeight);
     }
+
+    //Overriding abstract method:
     @Override
     public void describeElement() {
         System.out.println("************");
@@ -13,4 +17,5 @@ public class MetalElement extends Element {
         System.out.println("This is a metal element and metals are good conductors of electricity");
         System.out.println("************");
     }
-}
+
+}//end of Element class
