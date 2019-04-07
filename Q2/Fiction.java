@@ -2,7 +2,7 @@ package com.maktab.HW5.Q2;
 
 public class Fiction extends Book {
 
-    //Book class constructor:
+    //Fiction class constructor:
     Fiction(String title) {
         setTitle(title);
         setPrice();
