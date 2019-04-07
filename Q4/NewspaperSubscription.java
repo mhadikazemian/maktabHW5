@@ -3,8 +3,8 @@ package com.maktab.HW5.Q4;
 public abstract class NewspaperSubscription {
 
     //Class variables:
-    private String subscriberName;
     protected String address;
+    private String subscriberName;
     private double rate;
 
     //getters and setters
@@ -20,13 +20,14 @@ public abstract class NewspaperSubscription {
         return rate;
     }
 
+    public void setRate(double rate) {
+        this.rate = rate;
+    }
+
     public String getAddress() {
         return address;
     }
 
     public abstract void setAddress(String address);
-
-    public void setRate(double rate) {
-        this.rate = rate;
-    }
+    
 }//end of NewspaperSubscription
