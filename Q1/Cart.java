@@ -25,7 +25,7 @@ public class Cart {
             for (int j = 0; j < 5; j++) {
                 //the if condition is for not to count a counted product again
                 if (p < j) {
-                    if (purchase[p].equals(temp[j])) {
+                    if (purchase[p] == (temp[j]) && purchase[p]!= null) {
                         temp[j] = null;
                         k++;
                     }
@@ -83,7 +83,7 @@ public class Cart {
                 y++;
             }
         }
-    }
+    }//end of removeFromCart method
 
     //The following method is the last step of submitting a purchase
     public void submit() {
@@ -105,6 +105,7 @@ public class Cart {
 
     //The following method shows the total price of user's cart:
     public void bill() {
+        totalPrice = 0;
         for (int i = 0; i < 5; i++) {
             if (purchase[i] != null)
                 totalPrice += purchase[i].getPrice();
